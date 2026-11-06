@@ -1,0 +1,1 @@
+HTTP real con JAR y H2: login de 3 cuentas, crear post, escape HTML, enviar y aceptar amistad, bloqueo de borrado user, borrado admin y logout: OK

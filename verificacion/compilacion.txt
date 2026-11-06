@@ -1,0 +1,5 @@
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.092 s - in sw2.lab5.Lab5ApplicationTests
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+[INFO] Total time:  11.261 s
+[INFO] Finished at: 2026-11-05T20:57:58-05:00

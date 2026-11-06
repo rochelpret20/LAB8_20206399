@@ -1,0 +1,7 @@
+<!doctype html><html lang="es" xmlns:th="http://www.thymeleaf.org"><head th:fragment="head(title)">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title th:text="${title}">Blog Telecom</title>
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"><link rel="stylesheet" th:href="@{/css/custom.css}"></head><body>
+<nav th:fragment="navbar" class="navbar navbar-expand navbar-dark bg-dark"><a class="navbar-brand" th:href="@{/post}">Blog Telecom</a>
+<div class="navbar-nav flex-wrap"><a class="nav-link" th:href="@{/post}">Posts</a><a class="nav-link" th:href="@{/post/create}">Crear post</a><a class="nav-link" th:href="@{/friends}">Amistades</a><a class="nav-link" th:href="@{/user}">Mi perfil</a><a th:if="${isAdmin}" class="nav-link" th:href="@{/user/list}">Usuarios</a></div>
+<div th:if="${viewer != null}" class="ml-auto text-white"><span th:text="${viewer.firstname}"></span><form class="d-inline" th:action="@{/logout}" method="post"><button class="btn btn-outline-light btn-sm">Cerrar sesión</button></form></div></nav>
+<div th:fragment="message" th:if="${msg}" class="alert alert-success" th:text="${msg}"></div></body></html>
